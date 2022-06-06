@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from signup import views
+from . import views
 
 # whenever we add app in our project we need to add it in settings.py file inside INSTALLED_APPS
 
 urlpatterns = [
-    path('',views.signup),
+    path('',views.first),
     path('admin/', admin.site.urls),
     path('shop/', include('shop.urls')),
+    path('login/', include('login.urls')),
+    path('signup/', include('signup.urls')),
 ]

@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'shop',
     'rest_framework',
     'crispy_forms',
-    'signup'
+    'signup',
+    'login',
+    'CRUD',
 ]
 
 # specifying which frontend stylesheet framework we will use
