@@ -21,8 +21,8 @@ def signup(request):
         
        
         user = User.objects.create_user(username=username, first_name=firstname, last_name=lastname, email=email, password=password)
-        user.save()
+        #user.save()
         print("user added successfully")
-        return render(request, 'signup/signup_temp.html')
+        return redirect('/login')
     else:
         return render(request, 'signup/signup_temp.html')

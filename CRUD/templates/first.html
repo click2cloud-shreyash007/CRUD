@@ -2,6 +2,18 @@
 <html lang="en">
 
 <head>
+    <style>
+        .footer {
+            position: fixed;
+            left: 10px;
+            bottom: 5px;
+            right: 10px;
+            width: 95%;
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +30,15 @@
                 <div align="center" class="container">
                     <h1 style="text-align:center;" class="display-4">Welcome to the Shopping List</h1>
                     <p style="text-align:center;" class="lead">Implementing CRUD using Django</p>
-                    <hr> {%block content%} Register yourself
+                    <hr> {%block content%} Register yourself <br><br>
                     <a href="http://127.0.0.1:8000/signup/" class="btn btn-primary">Register</a>
-                    <hr> If already registered
-                    <a href="http://127.0.0.1:8000/login" class="btn btn-primary">Login</a> {%endblock%}
+                    <hr> If already registered <br><br>
+                    <a href="http://127.0.0.1:8000/login" class="btn btn-primary">Login</a>
+                    <br>
+                    <div class="footer">
+                        <strong>Copyright © 2022 by Shreyash. All Rights Reserved.</strong>
+                    </div>
+                    {%endblock%}
                 </div>
             </div>
         </div>
