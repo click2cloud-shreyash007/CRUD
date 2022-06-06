@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'shop',
     'rest_framework',
-    'crispy_forms'
+    'crispy_forms',
+    'signup'
 ]
 
 # specifying which frontend stylesheet framework we will use

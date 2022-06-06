@@ -1,5 +1,7 @@
+
+
 from django.shortcuts import render
 
 # Create your views here.
-def first(request):
-    return render(request, 'shop/first.html')
+def signup(request):
+    return render(request, 'signup/signup_temp.html')

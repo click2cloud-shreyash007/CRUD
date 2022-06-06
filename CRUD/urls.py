@@ -18,10 +18,10 @@ from django.urls import path, include
 
 from signup import views
 
-
+# whenever we add app in our project we need to add it in settings.py file inside INSTALLED_APPS
 
 urlpatterns = [
-    path('',views.first),
+    path('',views.signup),
     path('admin/', admin.site.urls),
     path('shop/', include('shop.urls')),
 ]
